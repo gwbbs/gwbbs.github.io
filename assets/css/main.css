@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Product Sans';
+    src: url('../fonts/ProductSans-Regular.woff');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Product Sans';
+    src: url('../fonts/ProductSans-Bold.woff');
+    font-weight: bold;
+}
+
+:root {
+        background: linear-gradient(90deg, #FFF 0%, #E2F4F4 100%);
+    }
+
+::selection {
+    background: #fff;
+}
+
+h1 {
+    font-family: 'Product Sans', sans-serif;
+    font-size: 9rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 20%;
+    background-image: url(../images/bg.svg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    font-family: 'Product Sans', sans-serif;
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: #000;
+    text-decoration: none;
+}
+
+a {
+    margin-right: 0;
+    margin-left: 0;
+    transition: 0.7s ease;
+}
+
+a:hover {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    transition: 0.7s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        background: linear-gradient(90deg, #000 0%, #1D1B1B 100%);
+    }
+    .links {
+        color: #fff;
+    }
+    a:link, a:visited, a:hover, a:active, a {
+        color: #fff;
+    }
+}
+
+@media (max-width: 450px) {
+    h1 {
+        font-size: 5rem;
+    }
+    .links {
+        font-size: 1rem;
+    }
+}
